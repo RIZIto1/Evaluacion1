@@ -19,6 +19,7 @@
 body{
     font-family: var(--arial);  
     margin: 30px 0 30px 0;
+
 }
 
 .contenedor{
@@ -135,8 +136,6 @@ body{
 }
 
 .panel{
-    position: fixed;
-    bottom: 1.5em;
     width: 352px;
     height: 78px;
     background-color: #000000;
@@ -144,8 +143,7 @@ body{
     color: var(--bg-primario);
     font-size: 30px;
     padding: 10px;
-     left: 50%;
-    transform: translateX(-50%);
+    margin: auto auto 0.5em auto;
 }
 
 .icon{    
