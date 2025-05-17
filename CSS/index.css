@@ -138,21 +138,18 @@ body{
  }
 
  .tarjetas{
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    gap: 1.5rem;
-    
+    gap: 1.5rem; 
  }
  .tarjeta{
-    background-color: rgb(255, 153, 0);
+    background-color: #ffffff;
     border-radius: 20px;
     height: 300px;
     box-shadow: var(--sombra-chica); 
  }
 .animales{
-    background-color: rgb(0, 255, 34);
     border-radius: 20px;
     height: 140px;
     width: 160px;
@@ -162,42 +159,40 @@ body{
     box-shadow: var(--sombra-chica); 
 }
 .imagen{
-    background-color: rgb(212, 0, 255);
     width: 100px;
     height: 100px;
     object-fit: contain;
 }
 .estado{
-    background-color: rgb(255, 255, 255);
     color: #FF453A;
-    font-size: 13px;
+    font-size: 11px;
     text-align: center;
     margin: 10px auto;
 
 }
 .titulo{
-    background-color: rgb(255, 255, 255);
     font-weight: bold;
+    font-size: 18px;
     font-family: var(--fuente-secundaria);
     text-align: center;
     margin:10px auto;
 
 }
 .precio{
-    background-color: rgb(255, 255, 255);
     color: #797979;
-    font-size: 12px;
+    font-size: 11px;
      margin:10px auto;
      text-align: center;
 }
 
- .boton {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  padding: 6px 16px;
-  font-size: 14px;
-  cursor: pointer;
+ .comprar {
+    display: block;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
 }
-
