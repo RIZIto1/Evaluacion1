@@ -11,7 +11,7 @@
     --txt-primario: #000000;
     --txt-secundario: #797979;
     --arial:  Arial, sans-serif;
-    --sombra-chica: 0px 0px 5px rgba(99, 98, 98, 0.5);
+    --sombra-chica: 0px 0px 5px rgb(99, 98, 98);
     --sombra-grande: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
 
@@ -59,6 +59,7 @@ body{
 .buscar{
     margin: auto;
     position: relative;
+    
 }
 
 .buscar input[type="text"]{
@@ -66,9 +67,8 @@ body{
     width: 350px;
     height: 40px;
     border-radius: 30px;
-    box-shadow: var(--sombra-chica); 
     padding-left: 20px;
-
+    box-shadow: var(--sombra-chica); 
 }
  .lupa{
     position: absolute; 
@@ -123,3 +123,15 @@ body{
   font-size: 14px;
   cursor: pointer;
 }
+ .linea{
+    background-color: var(--txt-secundario);
+    width: 40%;
+    height: 1px;
+    margin: 0 auto 10px auto;
+ }
+ .texto{    
+    color: var(--txt-secundario);
+    text-align: center;
+ }
+
+ 
