@@ -10,7 +10,7 @@
     --bg-fondo: #F5F5F5;
     --txt-primario: #000000;
     --txt-secundario: #797979;
-    --arial: arial, sans-serif;
+    --arial:  Arial, sans-serif;
     --sombra-chica: 0px 0px 5px rgba(0, 0, 0, 0.5);
     --sombra-grande: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
@@ -58,8 +58,6 @@ body{
  }
  
 .verMas{
-    background-color: var(--txt-primario);
-    color: var(--bg-primario);
     border-radius: 50px;
     height: 40px;
     width: 178px;
@@ -85,4 +83,11 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+button {
+    background: transparent; 
+    border: none;
+    background-color: var(--txt-primario);
+    color: var(--bg-primario);            
 }
