@@ -33,7 +33,7 @@ body{
     flex-direction: column;
 }
  .titulo{
-    margin-top: 40px;
+    margin-top: 70px;
     text-align: center; 
     font-size: 20px;
     padding-bottom: 10px;
@@ -147,6 +147,7 @@ body{
 }
 
 .icon{    
+    cursor: pointer; 
     font-size: 20px;
    
 }

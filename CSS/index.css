@@ -11,18 +11,19 @@
     --txt-primario: #000000;
     --txt-secundario: #797979;
     --arial:  Arial, sans-serif;
-    --sombra-chica: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    --sombra-chica: 0px 0px 5px rgba(99, 98, 98, 0.5);
     --sombra-grande: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
 
 body{
-    margin-top: 50px;
+    font-family: var(--arial);  
+    margin: 30px 0 30px 0;
 }
 
 .contenedor{
     width: 400px;
     height: 803px;
-    background-color: var(--bg-primario);
+    background-color: #FF453A;
     border-radius: 36px;
     gap: 16px;
     margin: auto;
@@ -30,64 +31,102 @@ body{
     display: flex;
     flex-direction: column;
 }
-
-.perro{
-    margin: 50px 0 0 20px;
+.imgUsuario{
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
-
-.p{
-    font-size: 15px;
-    color: #FF453A;
-}
-
 .usuario{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 20px;
-    width: 100%;
-}
-.icono{
-    font-size: 30px;
-    height: 40px;
-    display: flex; 
-    flex-direction: column; 
- }
- 
-.verMas{
-    border-radius: 50px;
-    height: 40px;
-    width: 178px;
-    display: flex;
-    margin: auto;
-    margin-top: 20px;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 380px ;
-}
-
-.panel{
-    width: 352px;
-    height: 78px;
-    background-color: #000000;
-    border-radius: 50px;
-    color: var(--bg-primario);
-    font-size: 30px;
-    padding: 10px;
-    margin: 0 20px 0 20px;
-}
-ul{
+    margin: 70px 20px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+
+}
+.usuario p{
+    color: #000000;
+    margin-left: 10px;
+}
+.campana{ 
+    margin-left: auto;
+    font-size: 25px;
+    color: var(--txt-secundario);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
-button {
-    background: transparent; 
+.buscar{
+    margin: auto;
+    position: relative;
+}
+
+.buscar input[type="text"]{
     border: none;
-    background-color: var(--txt-primario);
-    color: var(--bg-primario);            
+    width: 350px;
+    height: 40px;
+    border-radius: 30px;
+    box-shadow: var(--sombra-chica); 
+    padding-left: 20px;
+
+}
+ .lupa{
+    position: absolute; 
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+ }
+
+
+.contenedorIMG{
+    display: flex;
+
+        flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(33, 30, 184);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.productos{
+      list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #000; 
+
+}
+.lista{   
+
+    border-radius: 50% ;
+    background-color: rgb(246, 255, 127);
+    text-align: center;
+  color: #fff;
+}
+.lista img {
+    background-color: #FF453A;
+    height: 70px;
+    width: 70px;
+        object-fit: contain;
+
+}
+.boton {
+    text-align: center;
+
+    border: none;
+    background-color: #40ff3a;
+    border-radius: 50px;
+  font-weight: bold;
+}
+
+.perro {
+    background-color: #3aff3a;
+    height: 70px;
+    width: 70px;
 }
