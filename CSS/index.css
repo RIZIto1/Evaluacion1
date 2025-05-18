@@ -6,13 +6,13 @@
     list-style: none;
 }
 :root {
-    --bg-primario: #ffffff;
-    --bg-fondo: #F5F5F5;
+    --bg-primario: #F5F5F5;
+    --bg-fondo: #ffffff;
     --txt-primario: #000000;
     --txt-secundario: #797979;
     --arial:  Arial, sans-serif;
     --fuente-secundaria: Georgia;
-    --sombra-chica: 0px 0px 5px rgb(99, 98, 98);
+    --sombra-chica: 0px 0px 5px rgba(58, 58, 58, 0.5);
     --sombra-grande: 0px 0px 20px rgba(255, 255, 255, 0.5);
 }
 
@@ -24,21 +24,22 @@ body{
 .contenedor{
     width: 400px;
     height: 803px;
-    background-color: #FF453A;
-    border-radius: 36px;
-    gap: 16px;
+    background-color: var(--bg-fondo);
+    border-radius: 30px;
+    gap: 10px;
     margin: auto;
-    border: 2px solid black;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
 }
 .imgUsuario{
+    border: 1px solid #797979;
     height: 50px;
     width: 50px;
     border-radius: 50%;
 }
-.usuario{
-    margin: 70px 20px 0px;
+.usuario{ 
+    margin: 60px 20px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,11 +58,9 @@ body{
     cursor: pointer;
 }
 
-.buscar{
-    background-color: aqua;
+.buscar{  
     margin: 0 auto;
-    position: relative;
-    
+    position: relative;  
 }
 
 .buscar input[type="text"]{
@@ -84,8 +83,7 @@ body{
  }
 
 
-.contenedorIMG{
-    background-color: aqua;
+.contenedorIMG{ 
     padding: 0 2rem;
     border-radius: 1rem;
 }
@@ -95,6 +93,7 @@ body{
     justify-content: space-between;
 }
 .foto{
+    box-shadow: var(--sombra-chica);
     background-color: #000000;
     border-radius: 50%;       
     height: 80px;
@@ -118,6 +117,7 @@ body{
 }
 
 .boton {
+    box-shadow: var(--sombra-chica);
   background-color: #000;
   color: #fff;
   border: none;
@@ -130,17 +130,21 @@ body{
     background-color: var(--txt-secundario);
     width: 40%;
     height: 1px;
-    margin: 0 auto 10px auto;
+    margin: 0 auto;
  }
- .texto{    
+ .texto{ 
     color: var(--txt-secundario);
     text-align: center;
+    font-size:15px;
  }
 
+ .texto p{
+    margin-top: 5px;
+ }
  .tarjetas{
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+    margin: 0 auto 0;
     gap: 1.5rem; 
  }
  .tarjeta{
@@ -179,6 +183,7 @@ body{
 
 }
 .precio{
+    font-family: var(--fuente-secundaria);
     color: #797979;
     font-size: 11px;
      margin:10px auto;
@@ -195,4 +200,56 @@ body{
     padding: 8px 16px;
     font-size: 14px;
     cursor: pointer;
+}
+
+.verMas{
+    line-height: 40px;
+    border: none;
+    color: var(--bg-primario); 
+    margin: 0 auto;
+    background-color: var(--txt-primario);
+    border-radius: 20px;
+    width: 178px;
+    cursor: pointer;
+}
+.panel {
+  width: 352px;
+  height: 78px;
+  background-color: #000000;
+  border-radius: 50px;
+  color: var(--bg-primario);
+  font-size: 30px;
+  margin: auto auto 0.5em auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+
+.panel ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon .fa-house {
+  background-color: var(--txt-secundario);
+  padding: 15px;
+  border-radius: 50%;
+}
+.icon i { 
+  cursor: pointer;
+  color: var(--bg-primario);
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
